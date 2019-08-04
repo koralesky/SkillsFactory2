@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ce748b-8aba-43c7-be80-197b6c99b0e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/SkillDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/SourceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="918">
               <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
             </state>
           </provider>
@@ -39,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+            <state relative-caret-position="333">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entities/Skill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
-              <caret line="12" column="20" lean-forward="true" selection-end-line="57" />
+            <state relative-caret-position="469">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#308#309#0" expanded="true" />
@@ -71,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entities/Source.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="72" column="35" lean-forward="true" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="1183">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
@@ -99,10 +101,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/SkillDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#0#42#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/SourceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#639#640#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#0#22#1" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#43#1" expanded="true" />
+                <element signature="e#0#39#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
@@ -139,8 +191,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -165,7 +217,14 @@
         <option value="$PROJECT_DIR$/src/main/java/entities/Skill.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Source.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/SkillDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/SourceDao.java" />
       </list>
     </option>
   </component>
@@ -199,7 +258,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -239,6 +298,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skillsfactory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skillsfactory2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skillsfactory" type="b2602c69:ProjectViewProjectNode" />
@@ -387,7 +454,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564905262986</updated>
-      <workItem from="1564905265702" duration="7509000" />
+      <workItem from="1564905265702" duration="10845000" />
     </task>
     <task id="LOCAL-00001" summary="SKILL, SOURCE, USER Entitity classes made">
       <created>1564915699658</created>
@@ -396,11 +463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564915699658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ALL ENTITIES CREATED">
+      <created>1564920307883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564920307883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7509000" />
+    <option name="totallyTimeSpent" value="10845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -412,7 +486,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
@@ -424,7 +498,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14842904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,7 +545,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SKILL, SOURCE, USER Entitity classes made" />
-    <option name="LAST_COMMIT_MESSAGE" value="SKILL, SOURCE, USER Entitity classes made" />
+    <MESSAGE value="ALL ENTITIES CREATED" />
+    <option name="LAST_COMMIT_MESSAGE" value="ALL ENTITIES CREATED" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -484,24 +559,52 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Skill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="469">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/Source.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="72" column="35" lean-forward="true" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="1183">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#542#543#0" expanded="true" />
@@ -526,20 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/HibernateInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
@@ -572,20 +665,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Skill.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="12" column="20" lean-forward="true" selection-end-line="57" />
+        <state relative-caret-position="187">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#0#56#1" expanded="true" />
+            <element signature="e#0#20#1" expanded="true" />
+            <element signature="e#0#49#1" expanded="true" />
+            <element signature="e#0#76#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/SkillDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#42#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/SourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#0#22#1" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#43#1" expanded="true" />
+            <element signature="e#0#39#1" expanded="true" />
           </folding>
         </state>
       </provider>

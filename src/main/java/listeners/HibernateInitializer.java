@@ -10,9 +10,12 @@ import org.hibernate.service.ServiceRegistry;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+import javax.servlet.annotation.WebServlet;
 import java.util.Properties;
 import java.util.logging.Level;
 
+@WebListener
 public class HibernateInitializer implements ServletContextListener {
 
     @Override

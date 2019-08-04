@@ -2,6 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "skills")
@@ -10,6 +11,7 @@ public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(unique = true, nullable = false)
     private String name;
 
@@ -28,6 +30,7 @@ public class Skill {
     public void setName(String name) {
         this.name = name;
     }
+
 
     @Override
     public boolean equals(Object o) {

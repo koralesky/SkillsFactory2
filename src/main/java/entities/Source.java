@@ -2,7 +2,9 @@ package entities;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "sources")
@@ -15,6 +17,12 @@ public class Source {
     private String description;
     @Column(nullable = false)
     private String name;
+
+    @ManyToMany
+    @JoinTable(name = "sources_has_skills",
+            joinColumns = {@JoinColumn(name = "sources_id")},
+            inverseJoinColumns = {@JoinColumn(name = "skills_id")})
+    private Set<Skill> skills = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -40,12 +48,21 @@ public class Source {
         this.name = name;
     }
 
+    public Set<Skill> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(Set<Skill> skills) {
+        this.skills = skills;
+    }
+
     @Override
     public String toString() {
         return "Source{" +
                 "id=" + id +
                 ", description='" + description + '\'' +
                 ", name='" + name + '\'' +
+                ", skills=" + skills +
                 '}';
     }
 
@@ -56,11 +73,12 @@ public class Source {
         Source source = (Source) o;
         return Objects.equals(id, source.id) &&
                 Objects.equals(description, source.description) &&
-                name.equals(source.name);
+                name.equals(source.name) &&
+                Objects.equals(skills, source.skills);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, description, name);
+        return Objects.hash(id, description, name, skills);
     }
 }

@@ -1,5 +1,7 @@
 package listeners;
 
+
+import entities.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -37,9 +39,9 @@ public class HibernateInitializer implements ServletContextListener {
 
             // Odkomentuj poniższe instrukcje po utworzeniu klas encji (kolejne zadania)
 
-            //configuration.addAnnotatedClass(User.class);
-            //configuration.addAnnotatedClass(Source.class);
-            //configuration.addAnnotatedClass(Skill.class);
+            configuration.addAnnotatedClass(User.class);
+            configuration.addAnnotatedClass(Source.class);
+            configuration.addAnnotatedClass(Skill.class);
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                     .applySettings(configuration.getProperties()).build();

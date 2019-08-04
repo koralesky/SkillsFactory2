@@ -2,7 +2,9 @@ package entities;
 
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 
 @Entity
@@ -23,6 +25,12 @@ public class User {
 
     @Column(nullable = false)
     private String username;
+
+    @ManyToMany
+    @JoinTable(name = "user_has_sources",
+    joinColumns = {@JoinColumn(name="users_id")},
+    inverseJoinColumns = {@JoinColumn(name="sources_id")})
+    private Set<Source> sourceSet = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -64,6 +72,14 @@ public class User {
         this.username = username;
     }
 
+    public Set<Source> getSourceSet() {
+        return sourceSet;
+    }
+
+    public void setSourceSet(Set<Source> sourceSet) {
+        this.sourceSet = sourceSet;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -73,12 +89,13 @@ public class User {
                 Objects.equals(firstName, user.firstName) &&
                 Objects.equals(lastName, user.lastName) &&
                 password.equals(user.password) &&
-                username.equals(user.username);
+                username.equals(user.username) &&
+                Objects.equals(sourceSet, user.sourceSet);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, password, username);
+        return Objects.hash(id, firstName, lastName, password, username, sourceSet);
     }
 
     @Override
@@ -89,6 +106,7 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", password='" + password + '\'' +
                 ", username='" + username + '\'' +
+                ", sourceSet=" + sourceSet +
                 '}';
     }
 }
